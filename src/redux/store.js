@@ -1,8 +1,7 @@
-
 import {createStore} from 'redux';
-import reducer from './book/bookReducer';
+import bookReducer from './book/bookReducer';
 
 
-const store = createStore(reducer)
+const store = createStore(bookReducer)
 
 export default store

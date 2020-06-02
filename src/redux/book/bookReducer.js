@@ -3,15 +3,15 @@ const initialState = {
     numOfBooks:10
 }
 
-const reducer = (state=initialState,action)=>{
+const Cakereducer = (state=initialState,action)=>{
     switch(action.type){
         case BUY_BOOK : return {
             ...state,
-            numOfBooks:numOfBooks-1
+            numOfBooks:state.numOfBooks-1
         }
         default : return state
     }
 }
 
 
-export default reducer
+export default Cakereducer
